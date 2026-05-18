@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coklat Levi Ekermen</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+    }
+
+    header{
+      background:#3b1f12;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    header p{
+      margin-top:10px;
+      color:#ddd;
+    }
+
+    .hero{
+      height:400px;
+      background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+      url('https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:50px;
+      margin-bottom:15px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#ffb347;
+      color:black;
+      padding:12px 24px;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#ff9800;
+    }
+
+    .products{
+      padding:50px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .products h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:35px;
+    }
+
+    .product-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,.1);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#8b4513;
+      font-size:22px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#3b1f12;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:white;
+      padding:15px 20px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 5px 10px rgba(0,0,0,.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍫 Coklat Levi Ekermen</h1>
+    <p>Coklat premium rasa elite untuk para penggemar anime</p>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Rasakan Kekuatan Levi!</h2>
+      <p>Coklat premium dengan rasa manis mematikan 🔥</p>
+      <a href="#produk" class="btn">Lihat Produk</a>
+    </div>
+  </section>
+
+  <section class="products" id="produk">
+    <h2>Produk Kami</h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?q=80&w=1200&auto=format&fit=crop" alt="Coklat">
+        <div class="card-content">
+          <h3>Levi Dark Chocolate</h3>
+          <p>Coklat hitam premium dengan rasa elegan.</p>
+          <div class="price">Rp25.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?q=80&w=1200&auto=format&fit=crop" alt="Coklat">
+        <div class="card-content">
+          <h3>Levi Milk Chocolate</h3>
+          <p>Manis lembut favorit semua orang.</p>
+          <div class="price">Rp20.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200&auto=format&fit=crop" alt="Coklat">
+        <div class="card-content">
+          <h3>Levi Matcha Choco</h3>
+          <p>Kombinasi matcha dan coklat yang unik.</p>
+          <div class="price">Rp30.000</div>
+          <a href="#" class="btn">Beli Sekarang</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <p>© 2026 Coklat Levi Ekermen | Dibuat dengan 🍫</p>
+  </footer>
+
+  <a class="whatsapp" 
+     href="https://wa.me/6281234567890" 
+     target="_blank">
+     Chat WA
+  </a>
+
+</body>
+</html>
